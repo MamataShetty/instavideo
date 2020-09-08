@@ -10,10 +10,13 @@ $(document).ready(function () {
   });
   $(".navigation__link-toggle").click(function () {
     $(".siteHeader").toggleClass("-dropdown-active");
-    $(this).siblings().find(".navigation__dropdown").toggleClass("-active");
+    console.log(
+      $(this).siblings().find(".navigation__dropdown").addClass("-active")
+    );
+    $(this).next().toggleClass("-active");
     $(this)
       .siblings()
       .find(".navigation__dropdown__section")
-      .addClass("-active");
+      .toggleClass("-active");
   });
 });

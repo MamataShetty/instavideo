@@ -23590,7 +23590,7 @@ html[lang="de"] #signup .modal-container.premium-reminder-modal-transition {
   margin: 0;
 }
 .siteHeader .navigation__dropdown.-active {
-  visibility: visible;
+  visibility: visible; 
   pointer-events: all;
 }
 .siteHeader .navigation__dropdown {
