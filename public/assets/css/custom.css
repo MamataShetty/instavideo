@@ -23325,12 +23325,13 @@ html[lang="de"] #signup .modal-container.premium-reminder-modal-transition {
 }
 .siteHeader.-dropdown-active .siteHeader__row,
 .siteHeader.-initial-white .siteHeader__row,
-.siteHeader.-is-scrolling .siteHeader__row {
+.siteHeader.-is-scrolling .siteHeader__row, {
   color: inherit;
 }
 .siteHeader.-dropdown-active .siteHeader__row:before,
 .siteHeader.-initial-white .siteHeader__row:before,
-.siteHeader.-is-scrolling .siteHeader__row:before {
+.siteHeader.-is-scrolling .siteHeader__row:before,
+.-no-scroll .siteHeader__row:before {
   opacity: 1;
 }
 @media (max-width: 69.9375em) {
@@ -23657,6 +23658,12 @@ html[lang="de"] #signup .modal-container.premium-reminder-modal-transition {
 .siteHeader .navigation__dropdown.-active::-webkit-scrollbar {
   display: initial;
 }
+@media (max-width:992px) {
+  .-no-scroll .siteHeader .navigation__dropdown__wrapper {
+    opacity:1;
+    transform: translateY(100%);
+  }
+}
 .siteHeader .navigation__dropdown__wrapper {
   opacity: 0;
   height: 100vh;
@@ -23672,10 +23679,6 @@ html[lang="de"] #signup .modal-container.premium-reminder-modal-transition {
   bottom: 100%;
   z-index: 5;
 }
-.siteHeader.-dropdown-active .navigation__dropdown__wrapper {
-  opacity: 1;
-  transform: translateY(100%);
-}
 .siteHeader .navigation__dropdown__featured-background {
   position: absolute;
   background: #f6f8f9;
@@ -23687,6 +23690,11 @@ html[lang="de"] #signup .modal-container.premium-reminder-modal-transition {
   transform-origin: left;
   /* transform: translateX(63%); */
   transition: transform 0.35s cubic-bezier(0, 0, 0.16, 0.96);
+}
+@media (max-width: 992px) {
+  .siteHeader .navigation__dropdown__featured-background {
+    display: none;
+  }
 }
 @media (min-width: 1600px) {
   .siteHeader .navigation__dropdown__featured-background {

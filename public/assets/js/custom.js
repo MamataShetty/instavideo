@@ -40,4 +40,11 @@ $(document).ready(function () {
       submenu.toggleClass("-active");
     }
   });
+
+  $("#mobileNavToggle").click(function () {
+    $(this).toggleClass("-active");
+    $(".horizontalNavigation ").toggleClass("-active");
+    // $(".siteHeader").toggleClass("-dropdown-active");
+    document.getElementsByTagName("html")[0].classList.toggle("-no-scroll");
+  });
 });
