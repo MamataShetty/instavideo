@@ -25,58 +25,60 @@
         )
           o[n].getAttribute("data-filter") &&
             (l[n] = o[n].getAttribute("data-filter"));
+        console.log(l);
+        console.log(t);
         l.indexOf(t) >= 0 &&
           (i.updateLeftNav(t), i.updateUrl(t), a.hide(), r.show());
       },
     };
-  //   t.on("load", function () {
-  //     var t = AsanaHelpers.getParameterByName("category");
-  //     t &&
-  //       (i.filterCategory(t),
-  //       e("html, body").animate(
-  //         { scrollTop: e("#directory").offset().top - 350 },
-  //         500
-  //       ));
-  //   }),
-  a.ready(function () {
-    var t = e(".sidebar li a"),
-      a = e(".sidebar-select"),
-      r = e(".appsCarousel"),
-      o = e("#sticky");
-    t.on("click tap", function () {
-      var t = e(this).data("filter");
-      i.filterCategory(t);
-    }),
-      a.on("change", function () {
-        var t = e(this).find(":selected").val();
+  t.on("load", function () {
+    // var t = AsanaHelpers.getParameterByName("category");
+    // t &&
+    //   (i.filtercategory(t),
+    //   e("html, body").animate(
+    //     { scrollTop: e("#directory").offset().top - 350 },
+    //     500
+    //   ));
+  }),
+    a.ready(function () {
+      var t = e(".sidebar li a"),
+        a = e(".sidebar-select"),
+        r = e(".appsCarousel"),
+        o = e("#sticky");
+      t.on("click tap", function () {
+        var t = e(this).data("filter");
         i.filterCategory(t);
       }),
-      r.slick({
-        autoplay: !0,
-        autoplaySpeed: 5e3,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: !0,
-        dots: !0,
-        draggable: !1,
-        centerMode: !0,
-        centerPadding: "22%",
-        responsive: [
-          {
-            breakpoint: 960,
-            settings: {
-              autoplay: !1,
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              arrows: !1,
-              centerPadding: "16px",
+        a.on("change", function () {
+          var t = e(this).find(":selected").val();
+          i.filterCategory(t);
+        }),
+        r.slick({
+          autoplay: !0,
+          autoplaySpeed: 5e3,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: !0,
+          dots: !0,
+          draggable: !1,
+          centerMode: !0,
+          centerPadding: "22%",
+          responsive: [
+            {
+              breakpoint: 960,
+              settings: {
+                autoplay: !1,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: !1,
+                centerPadding: "16px",
+              },
             },
-          },
-        ],
-      }),
-      o.sticky({ topSpacing: 50, bottomSpacing: 0 }),
-      t.click(function () {
-        document.getElementById("apps-directory-scroll-to").scrollIntoView();
-      });
-  });
+          ],
+        }),
+        o.sticky({ topSpacing: 50, bottomSpacing: 0 }),
+        t.click(function () {
+          document.getElementById("apps-directory-scroll-to").scrollIntoView();
+        });
+    });
 })(jQuery);
