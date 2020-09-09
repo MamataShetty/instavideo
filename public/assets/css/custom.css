@@ -10,6 +10,45 @@
   text-decoration: inherit;
   vertical-align: inherit;
 }
+@font-face {
+  font-family: "gordita";
+  src: url("../fonts/Gordita-Medium.eot");
+  src: url("../fonts/Gordita-Medium.eot?#iefix")
+      format("../fonts/embedded-opentype"),
+    url("../fonts/Gordita-Medium.woff2") format("woff2"),
+    url("../fonts/Gordita-Medium.woff") format("woff"),
+    url("../fonts/Gordita-Medium.ttf") format("truetype"),
+    url("../fonts/Gordita-Medium.svg#Gordita-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "gordita";
+  src: url("../fonts/Gordita-Regular.eot");
+  src: url("../fonts/Gordita-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Gordita-Regular.woff2") format("woff2"),
+    url("../fonts/Gordita-Regular.woff") format("woff"),
+    url("../fonts/Gordita-Regular.ttf") format("truetype"),
+    url("../fonts/Gordita-Regular.svg#Gordita-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "gordita";
+  src: url("../fonts/Gordita-Light.eot");
+  src: url("../fonts/Gordita-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Gordita-Light.woff2") format("woff2"),
+    url("../fonts/Gordita-Light.woff") format("woff"),
+    url("../fonts/Gordita-Light.ttf") format("truetype"),
+    url("../fonts/Gordita-Light.svg#Gordita-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
 html {
   box-sizing: border-box;
   cursor: default;
@@ -17578,7 +17617,7 @@ p .icon {
   background-color: transparent;
   outline: none;
 }
-@media (min-width: 70em) {
+@media (min-width: 991px) {
   .mobileNav-wrapper {
     display: none;
   }
@@ -23020,7 +23059,6 @@ html[lang="de"] #signup .modal-container.premium-reminder-modal-transition {
   pointer-events: none;
   transition: transform 0.2s cubic-bezier(0, 0.65, 0.7, 0.9);
   display: block;
-  -ms-transform: none;
 }
 .loginForm-submit-text span,
 .signupForm-submit-text span {
@@ -23589,10 +23627,7 @@ html[lang="de"] #signup .modal-container.premium-reminder-modal-transition {
   padding: 0 12px;
   margin: 0;
 }
-.siteHeader .navigation__dropdown.-active {
-  visibility: visible; 
-  pointer-events: all;
-}
+
 .siteHeader .navigation__dropdown {
   display: flex;
   pointer-events: none;
@@ -23624,7 +23659,7 @@ html[lang="de"] #signup .modal-container.premium-reminder-modal-transition {
 }
 .siteHeader .navigation__dropdown__wrapper {
   opacity: 0;
-  height: 200vh;
+  height: 100vh;
   min-height: 500px;
   box-shadow: 0 50px 60px 0 rgba(36, 50, 66, 0.15);
   position: fixed;
@@ -23639,30 +23674,47 @@ html[lang="de"] #signup .modal-container.premium-reminder-modal-transition {
 }
 .siteHeader.-dropdown-active .navigation__dropdown__wrapper {
   opacity: 1;
-  top: 0;
+  transform: translateY(100%);
 }
 .siteHeader .navigation__dropdown__featured-background {
   position: absolute;
   background: #f6f8f9;
   border-left: 1px solid #e0e6e8;
   height: 100%;
-  width: 100vw;
+  width: 35vw;
   top: 0;
-  left: 100vw;
+  right: 0;
   transform-origin: left;
-  transform: translateX(38%);
+  /* transform: translateX(63%); */
   transition: transform 0.35s cubic-bezier(0, 0, 0.16, 0.96);
+}
+@media (min-width: 1600px) {
+  .siteHeader .navigation__dropdown__featured-background {
+    width: 40vw;
+  }
+}
+@media (min-width: 2300px) {
+  .siteHeader .navigation__dropdown__featured-background {
+    width: 45vw;
+  }
 }
 .siteHeader .navigation__dropdown__section {
   padding-bottom: 20px;
   margin: 40px 75px 0 0;
   opacity: 0;
-  transition: opacity 0.45s cubic-bezier(0, 0, 0.16, 0.96),
-    transform 0.4s cubic-bezier(0, 0, 0.16, 0.96);
+  transition: transform 120ms cubic-bezier(1, 0.01, 1, 0.99) 0s,
+    opacity 120ms cubic-bezier(1, 0.01, 1, 0.99) 0s;
+  transform: translateY(-20px);
+  /* transition: opacity 0.45s cubic-bezier(0, 0, 0.16, 0.96),
+    transform 0.4s cubic-bezier(0, 0, 0.16, 0.96); */
 }
 
 .siteHeader.-dropdown-active .navigation__dropdown__section.-active {
   opacity: 1;
+  transform: translateY(0px);
+  transition: opacity 0.45s cubic-bezier(0, 0, 0.16, 0.96),
+    transform 0.4s cubic-bezier(0, 0, 0.16, 0.96);
+  transition-delay: 200ms;
 }
 .siteHeader .navigation__dropdown__section:hover {
   opacity: 0.6;
@@ -24086,7 +24138,7 @@ html[lang="de"] #signup .modal-container.premium-reminder-modal-transition {
   padding: 0 20px;
   height: 45px;
   position: absolute;
-  bottom: 0;
+  top: 94%;
   left: 0;
 }
 .siteHeader .navigation__dropdown__footer-list {
@@ -24170,7 +24222,7 @@ html[lang="de"] #signup .modal-container.premium-reminder-modal-transition {
     display: none;
   }
 }
-@media (max-width: 69.9375em) {
+@media (max-width: 991px) {
   .siteHeader {
     position: relative;
   }
@@ -24976,7 +25028,7 @@ html[lang="de"] #signup .modal-container.premium-reminder-modal-transition {
   position: relative;
   width: 100%;
 }
-/* .textblocks {
+.textblocks {
   padding-bottom: 80px;
   padding-top: 80px;
 }
@@ -30501,8 +30553,7 @@ form.mktoForm.marketing-embed-form
   }
 }
 
-*/
-.m-0 {
+*/ .m-0 {
   margin: 0 !important;
 }
 .mt-0 {

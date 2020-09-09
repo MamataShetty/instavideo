@@ -15,6 +15,7 @@
       crossorigin="anonymous"
     ></script>
     <script type="text/javascript" src="assets/js/custom.js"></script>
+    <script type="text/javascript" src="assets/js/rotate-gallery.js"></script>
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/7.19.1/firebase-app.js"></script>
     <!-- include only the Firebase features as you need -->
@@ -30,7 +31,7 @@
       <div class="siteHeader__row">
         <div class="siteHeader__wrapper">
           <div class="siteHeader__nav-group">
-            <a class="siteHeader__logo -product"> Logo </a>
+            <a href="/" class="siteHeader__logo -product"> Logo </a>
             <nav class="horizontalNavigation">
               <h3 class="sr-only">Navigation Instructions</h3>
               <p class="sr-only">
@@ -71,10 +72,7 @@
                     </span>
                   </button>
 
-                  <div
-                    class="navigation__dropdown"
-                    id="navigation__dropdown-why-instavideo"
-                  >
+                  <div class="navigation__dropdown">
                     <div
                       class="navigation__dropdown__section-list"
                       role="presentation"
@@ -108,7 +106,7 @@
                                   class="navigation__dropdown__card-description"
                                 >
                                   <a
-                                    href="product.html"
+                                    href="/"
                                     class="navigation__dropdown__card-link"
                                     role="menuitem"
                                     aria-posinset="1"
@@ -144,7 +142,7 @@
                                   class="navigation__dropdown__card-description"
                                 >
                                   <a
-                                    href="apps.html"
+                                    href="/apps"
                                     class="navigation__dropdown__card-link"
                                     role="menuitem"
                                     aria-posinset="2"
@@ -879,10 +877,7 @@
                     </span>
                   </button>
 
-                  <div
-                    class="navigation__dropdown"
-                    id="navigation__dropdown-solutions"
-                  >
+                  <div class="navigation__dropdown">
                     <div
                       class="navigation__dropdown__section-list"
                       role="presentation"
@@ -1429,15 +1424,15 @@
                     >
                       <div
                         class="navigation__dropdown__section"
-                        data-nav-section="templates"
-                        aria-labelledby="navigation__dropdown__column-label-templates"
+                        data-nav-section="allplans"
+                        aria-labelledby="navigation__dropdown__column-label-allplans"
                         role="group"
                       >
                         <h3
-                          id="navigation__dropdown__column-label-templates"
+                          id="navigation__dropdown__column-label-allplans"
                           class="navigation__dropdown__section-label"
                         >
-                          Templates
+                          All Plans
                         </h3>
                         <div class="navigation__dropdown__column-wrapper">
                           <ul
@@ -1445,22 +1440,22 @@
                             role="presentation"
                           >
                             <li
-                              class="navigation__dropdown__item -first -last"
+                              class="navigation__dropdown__item -first"
                               role="presentation"
                             >
                               <div
-                                class="navigation__dropdown__card navigation__dropdown__card--orange navigation__dropdown__card--icon"
+                                class="navigation__dropdown__card navigation__dropdown__card--gray navigation__dropdown__card--icon"
                                 aria-describedby="main-menu-help-1 main-menu-help-2 main-menu-help-3"
                               >
                                 <svg
-                                  class="icon-svg icon-svg--templates icon--orange"
+                                  class="icon-svg icon-svg--basic icon--gray"
                                   width="18"
                                   height="18"
                                   viewbox="0 0 32 32"
                                   preserveAspectRatio="xMinYMin"
                                 >
                                   <use
-                                    xlink:href="assets/svg/icons.svg#icon--templates"
+                                    xlink:href="assets/svg/icons.svg#icon--basic"
                                   ></use>
                                 </svg>
 
@@ -1468,293 +1463,25 @@
                                   class="navigation__dropdown__card-description"
                                 >
                                   <a
-                                    href="templates.html"
+                                    href="pricing.html"
                                     class="navigation__dropdown__card-link"
                                     role="menuitem"
                                     aria-posinset="1"
-                                    aria-setsize="1"
-                                    aria-describedby="nav-card-TemplatesHome"
+                                    aria-setsize="5"
+                                    aria-describedby="nav-card-Basic"
                                     tabindex="-1"
                                   >
                                     <h4
                                       class="navigation__dropdown__card-label"
                                     >
-                                      Templates Home
+                                      Basic
                                     </h4>
                                   </a>
                                   <span
-                                    id="nav-card-TemplatesHome"
+                                    id="nav-card-Basic"
                                     class="navigation__dropdown__card-summary"
-                                    >Hit the ground running with templates
-                                    designed for your use-case</span
-                                  >
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-
-                      <div
-                        class="navigation__dropdown__section"
-                        data-nav-section="populartemplates"
-                        aria-labelledby="navigation__dropdown__column-label-populartemplates"
-                        role="group"
-                      >
-                        <h3
-                          id="navigation__dropdown__column-label-populartemplates"
-                          class="navigation__dropdown__section-label"
-                        >
-                          Popular Templates
-                        </h3>
-                        <div class="navigation__dropdown__column-wrapper">
-                          <ul
-                            class="navigation__dropdown__column"
-                            role="presentation"
-                          >
-                            <li
-                              class="navigation__dropdown__item -first"
-                              role="presentation"
-                            >
-                              <a
-                                class="navigation__dropdown__template navigation__dropdown__template--icon"
-                                href="templates/for/other/business-continuity-plan.html"
-                                role="menuitem"
-                                tabindex="-1"
-                                aria-posinset="1"
-                                aria-setsize="5"
-                                aria-describedby="main-menu-help-1 main-menu-help-2 main-menu-help-4"
-                              >
-                                <svg
-                                  class="icon-svg icon-svg--target icon--orange"
-                                  width="10"
-                                  height="10"
-                                  viewbox="0 0 32 32"
-                                  preserveAspectRatio="xMinYMin"
-                                >
-                                  <use
-                                    xlink:href="assets/svg/icons.svg#icon--target"
-                                  ></use>
-                                </svg>
-
-                                <span class="navigation__dropdown__card-label"
-                                  >Team continuity</span
-                                >
-                              </a>
-                            </li>
-
-                            <li
-                              class="navigation__dropdown__item"
-                              role="presentation"
-                            >
-                              <a
-                                class="navigation__dropdown__template navigation__dropdown__template--icon"
-                                href="templates/for/other/qbr-meeting-agenda.html"
-                                role="menuitem"
-                                tabindex="-1"
-                                aria-posinset="2"
-                                aria-setsize="5"
-                                aria-describedby="main-menu-help-1 main-menu-help-2 main-menu-help-4"
-                              >
-                                <svg
-                                  class="icon-svg icon-svg--onboarding-pink icon--orange"
-                                  width="10"
-                                  height="10"
-                                  viewbox="0 0 32 32"
-                                  preserveAspectRatio="xMinYMin"
-                                >
-                                  <use
-                                    xlink:href="assets/svg/icons.svg#icon--onboarding-pink"
-                                  ></use>
-                                </svg>
-
-                                <span class="navigation__dropdown__card-label"
-                                  >Meeting agenda</span
-                                >
-                              </a>
-                            </li>
-
-                            <li
-                              class="navigation__dropdown__item"
-                              role="presentation"
-                            >
-                              <a
-                                class="navigation__dropdown__template navigation__dropdown__template--icon"
-                                href="templates/for/other/cross-functional-project-plan.html"
-                                role="menuitem"
-                                tabindex="-1"
-                                aria-posinset="3"
-                                aria-setsize="5"
-                                aria-describedby="main-menu-help-1 main-menu-help-2 main-menu-help-4"
-                              >
-                                <svg
-                                  class="icon-svg icon-svg--strategy icon--orange"
-                                  width="10"
-                                  height="10"
-                                  viewbox="0 0 32 32"
-                                  preserveAspectRatio="xMinYMin"
-                                >
-                                  <use
-                                    xlink:href="assets/svg/icons.svg#icon--strategy"
-                                  ></use>
-                                </svg>
-
-                                <span class="navigation__dropdown__card-label"
-                                  >Project plan</span
-                                >
-                              </a>
-                            </li>
-
-                            <li
-                              class="navigation__dropdown__item"
-                              role="presentation"
-                            >
-                              <a
-                                class="navigation__dropdown__template navigation__dropdown__template--icon"
-                                href="templates/for/other/work-requests.html"
-                                role="menuitem"
-                                tabindex="-1"
-                                aria-posinset="4"
-                                aria-setsize="5"
-                                aria-describedby="main-menu-help-1 main-menu-help-2 main-menu-help-4"
-                              >
-                                <svg
-                                  class="icon-svg icon-svg--lightbulb-blue icon--orange"
-                                  width="10"
-                                  height="10"
-                                  viewbox="0 0 32 32"
-                                  preserveAspectRatio="xMinYMin"
-                                >
-                                  <use
-                                    xlink:href="assets/svg/icons.svg#icon--lightbulb-blue"
-                                  ></use>
-                                </svg>
-
-                                <span class="navigation__dropdown__card-label"
-                                  >Work requests</span
-                                >
-                              </a>
-                            </li>
-
-                            <li
-                              class="navigation__dropdown__item -last"
-                              role="presentation"
-                            >
-                              <a
-                                class="navigation__dropdown__template navigation__dropdown__template--icon"
-                                href="templates/for/other/team-goals-planning-example.html"
-                                role="menuitem"
-                                tabindex="-1"
-                                aria-posinset="5"
-                                aria-setsize="5"
-                                aria-describedby="main-menu-help-1 main-menu-help-2 main-menu-help-4"
-                              >
-                                <svg
-                                  class="icon-svg icon-svg--campaign-red icon--orange"
-                                  width="10"
-                                  height="10"
-                                  viewbox="0 0 32 32"
-                                  preserveAspectRatio="xMinYMin"
-                                >
-                                  <use
-                                    xlink:href="assets/svg/icons.svg#icon--campaign-red"
-                                  ></use>
-                                </svg>
-
-                                <span class="navigation__dropdown__card-label"
-                                  >Team goals & objective planning</span
-                                >
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="horizontalNavigation__list-item">
-                  <button
-                    id="navigation__dropdown-toggle-resources"
-                    data-nav-dropdown="navigation__dropdown-resources"
-                    aria-controls="navigation__dropdown-resources"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    role="menuitem"
-                    class="navigation__link navigation__link-toggle"
-                  >
-                    <span class="navigation__link-text">
-                      Resources
-
-                      <svg
-                        class="icon-svg icon-svg--down-caret icon--gray"
-                        width="10"
-                        height="10"
-                        viewbox="0 0 32 32"
-                        preserveAspectRatio="xMinYMin"
-                      >
-                        <use
-                          xlink:href="assets/svg/icons.svg#icon--down-caret"
-                        ></use>
-                      </svg>
-                    </span>
-                  </button>
-
-                  <div
-                    class="navigation__dropdown"
-                    id="navigation__dropdown-resources"
-                  >
-                    <div
-                      class="navigation__dropdown__section-list"
-                      role="presentation"
-                    >
-                      <div
-                        class="navigation__dropdown__section"
-                        data-nav-section="learn"
-                        aria-labelledby="navigation__dropdown__column-label-learn"
-                        role="group"
-                      >
-                        <h3
-                          id="navigation__dropdown__column-label-learn"
-                          class="navigation__dropdown__section-label"
-                        >
-                          Learn
-                        </h3>
-                        <div class="navigation__dropdown__column-wrapper">
-                          <ul
-                            class="navigation__dropdown__column"
-                            role="presentation"
-                          >
-                            <li
-                              class="navigation__dropdown__item -first"
-                              role="presentation"
-                            >
-                              <div
-                                class="navigation__dropdown__card"
-                                aria-describedby="main-menu-help-1 main-menu-help-2 main-menu-help-3"
-                              >
-                                <div
-                                  class="navigation__dropdown__card-description"
-                                >
-                                  <a
-                                    href="resources.html"
-                                    class="navigation__dropdown__card-link"
-                                    role="menuitem"
-                                    aria-posinset="1"
-                                    aria-setsize="4"
-                                    aria-describedby="nav-card-WorkManagementResources"
-                                    tabindex="-1"
-                                  >
-                                    <h4
-                                      class="navigation__dropdown__card-label"
-                                    >
-                                      Work Management Resources
-                                    </h4>
-                                  </a>
-                                  <span
-                                    id="nav-card-WorkManagementResources"
-                                    class="navigation__dropdown__card-summary"
-                                    >Discover best practices, watch webinars,
-                                    get insights</span
+                                    >For simple task and project management.
+                                    Free for teams up to 15</span
                                   >
                                 </div>
                               </div>
@@ -1765,32 +1492,44 @@
                               role="presentation"
                             >
                               <div
-                                class="navigation__dropdown__card"
+                                class="navigation__dropdown__card navigation__dropdown__card--gold navigation__dropdown__card--icon"
                                 aria-describedby="main-menu-help-1 main-menu-help-2 main-menu-help-3"
                               >
+                                <svg
+                                  class="icon-svg icon-svg--premium-line icon--gold"
+                                  width="18"
+                                  height="18"
+                                  viewbox="0 0 32 32"
+                                  preserveAspectRatio="xMinYMin"
+                                >
+                                  <use
+                                    xlink:href="assets/svg/icons.svg#icon--premium-line"
+                                  ></use>
+                                </svg>
+
                                 <div
                                   class="navigation__dropdown__card-description"
                                 >
                                   <a
-                                    href="guide.html"
+                                    href="premium.html"
                                     class="navigation__dropdown__card-link"
                                     role="menuitem"
                                     aria-posinset="2"
-                                    aria-setsize="4"
-                                    aria-describedby="nav-card-AsanaGuide"
+                                    aria-setsize="5"
+                                    aria-describedby="nav-card-Premium"
                                     tabindex="-1"
                                   >
                                     <h4
                                       class="navigation__dropdown__card-label"
                                     >
-                                      Asana Guide
+                                      Premium
                                     </h4>
                                   </a>
                                   <span
-                                    id="nav-card-AsanaGuide"
+                                    id="nav-card-Premium"
                                     class="navigation__dropdown__card-summary"
-                                    >Get lots of tips, tricks, and advice to get
-                                    the most from Asana</span
+                                    >For effectively planning and managing team
+                                    projects</span
                                   >
                                 </div>
                               </div>
@@ -1801,196 +1540,92 @@
                               role="presentation"
                             >
                               <div
-                                class="navigation__dropdown__card"
+                                class="navigation__dropdown__card navigation__dropdown__card--teal navigation__dropdown__card--icon"
                                 aria-describedby="main-menu-help-1 main-menu-help-2 main-menu-help-3"
                               >
+                                <svg
+                                  class="icon-svg icon-svg--business icon--teal"
+                                  width="18"
+                                  height="18"
+                                  viewbox="0 0 32 32"
+                                  preserveAspectRatio="xMinYMin"
+                                >
+                                  <use
+                                    xlink:href="assets/svg/icons.svg#icon--business"
+                                  ></use>
+                                </svg>
+
                                 <div
                                   class="navigation__dropdown__card-description"
                                 >
                                   <a
-                                    href="https://academy.asana.com/"
+                                    href="business.html"
                                     class="navigation__dropdown__card-link"
                                     role="menuitem"
                                     aria-posinset="3"
-                                    aria-setsize="4"
-                                    aria-describedby="nav-card-AsanaAcademy"
+                                    aria-setsize="5"
+                                    aria-describedby="nav-card-Business"
                                     tabindex="-1"
                                   >
                                     <h4
                                       class="navigation__dropdown__card-label"
                                     >
-                                      Asana Academy
+                                      Business
                                     </h4>
                                   </a>
                                   <span
-                                    id="nav-card-AsanaAcademy"
+                                    id="nav-card-Business"
                                     class="navigation__dropdown__card-summary"
-                                    >Sign up for interactive courses and
-                                    webinars to learn Asana</span
+                                    >For managing large initiatives and
+                                    improving cross-team collaboration</span
                                   >
                                 </div>
                               </div>
                             </li>
 
                             <li
-                              class="navigation__dropdown__item -last"
+                              class="navigation__dropdown__item"
                               role="presentation"
                             >
                               <div
-                                class="navigation__dropdown__card"
+                                class="navigation__dropdown__card navigation__dropdown__card--coral navigation__dropdown__card--icon"
                                 aria-describedby="main-menu-help-1 main-menu-help-2 main-menu-help-3"
                               >
+                                <svg
+                                  class="icon-svg icon-svg--enterprise icon--coral"
+                                  width="18"
+                                  height="18"
+                                  viewbox="0 0 32 32"
+                                  preserveAspectRatio="xMinYMin"
+                                >
+                                  <use
+                                    xlink:href="assets/svg/icons.svg#icon--enterprise"
+                                  ></use>
+                                </svg>
+
                                 <div
                                   class="navigation__dropdown__card-description"
                                 >
                                   <a
-                                    href="https://blog.asana.com/"
+                                    href="enterprise.html"
                                     class="navigation__dropdown__card-link"
                                     role="menuitem"
                                     aria-posinset="4"
-                                    aria-setsize="4"
-                                    aria-describedby="nav-card-Blog"
+                                    aria-setsize="5"
+                                    aria-describedby="nav-card-Enterprise"
                                     tabindex="-1"
                                   >
                                     <h4
                                       class="navigation__dropdown__card-label"
                                     >
-                                      Blog
+                                      Enterprise
                                     </h4>
                                   </a>
                                   <span
-                                    id="nav-card-Blog"
+                                    id="nav-card-Enterprise"
                                     class="navigation__dropdown__card-summary"
-                                    >Discover the latest Asana product and
-                                    company news</span
-                                  >
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-
-                      <div
-                        class="navigation__dropdown__section"
-                        data-nav-section="connect"
-                        aria-labelledby="navigation__dropdown__column-label-connect"
-                        role="group"
-                      >
-                        <h3
-                          id="navigation__dropdown__column-label-connect"
-                          class="navigation__dropdown__section-label"
-                        >
-                          Connect
-                        </h3>
-                        <div class="navigation__dropdown__column-wrapper">
-                          <ul
-                            class="navigation__dropdown__column"
-                            role="presentation"
-                          >
-                            <li
-                              class="navigation__dropdown__item -first"
-                              role="presentation"
-                            >
-                              <div
-                                class="navigation__dropdown__card"
-                                aria-describedby="main-menu-help-1 main-menu-help-2 main-menu-help-3"
-                              >
-                                <div
-                                  class="navigation__dropdown__card-description"
-                                >
-                                  <a
-                                    href="https://events.asana.com/"
-                                    class="navigation__dropdown__card-link"
-                                    role="menuitem"
-                                    aria-posinset="1"
-                                    aria-setsize="4"
-                                    aria-describedby="nav-card-Events"
-                                    tabindex="-1"
-                                  >
-                                    <h4
-                                      class="navigation__dropdown__card-label"
-                                    >
-                                      Events
-                                    </h4>
-                                  </a>
-                                  <span
-                                    id="nav-card-Events"
-                                    class="navigation__dropdown__card-summary"
-                                    >Find out about upcoming events near
-                                    you</span
-                                  >
-                                </div>
-                              </div>
-                            </li>
-
-                            <li
-                              class="navigation__dropdown__item"
-                              role="presentation"
-                            >
-                              <div
-                                class="navigation__dropdown__card"
-                                aria-describedby="main-menu-help-1 main-menu-help-2 main-menu-help-3"
-                              >
-                                <div
-                                  class="navigation__dropdown__card-description"
-                                >
-                                  <a
-                                    href="community.html"
-                                    class="navigation__dropdown__card-link"
-                                    role="menuitem"
-                                    aria-posinset="2"
-                                    aria-setsize="4"
-                                    aria-describedby="nav-card-CommunityPrograms"
-                                    tabindex="-1"
-                                  >
-                                    <h4
-                                      class="navigation__dropdown__card-label"
-                                    >
-                                      Community Programs
-                                    </h4>
-                                  </a>
-                                  <span
-                                    id="nav-card-CommunityPrograms"
-                                    class="navigation__dropdown__card-summary"
-                                    >Connect with and learn from Asana customers
-                                    around the world</span
-                                  >
-                                </div>
-                              </div>
-                            </li>
-
-                            <li
-                              class="navigation__dropdown__item"
-                              role="presentation"
-                            >
-                              <div
-                                class="navigation__dropdown__card"
-                                aria-describedby="main-menu-help-1 main-menu-help-2 main-menu-help-3"
-                              >
-                                <div
-                                  class="navigation__dropdown__card-description"
-                                >
-                                  <a
-                                    href="support.html"
-                                    class="navigation__dropdown__card-link"
-                                    role="menuitem"
-                                    aria-posinset="3"
-                                    aria-setsize="4"
-                                    aria-describedby="nav-card-Support"
-                                    tabindex="-1"
-                                  >
-                                    <h4
-                                      class="navigation__dropdown__card-label"
-                                    >
-                                      Support
-                                    </h4>
-                                  </a>
-                                  <span
-                                    id="nav-card-Support"
-                                    class="navigation__dropdown__card-summary"
-                                    >Need help? Contact the Asana support
-                                    team</span
+                                    >For organizations that need additional
+                                    security, control, and support</span
                                   >
                                 </div>
                               </div>
@@ -2001,230 +1636,54 @@
                               role="presentation"
                             >
                               <div
-                                class="navigation__dropdown__card"
+                                class="navigation__dropdown__card navigation__dropdown__card--purple navigation__dropdown__card--icon navigation__dropdown__card--arrow"
                                 aria-describedby="main-menu-help-1 main-menu-help-2 main-menu-help-3"
                               >
+                                <svg
+                                  class="icon-svg icon-svg--cog-outline icon--purple"
+                                  width="18"
+                                  height="18"
+                                  viewbox="0 0 32 32"
+                                  preserveAspectRatio="xMinYMin"
+                                >
+                                  <use
+                                    xlink:href="assets/svg/icons.svg#icon--cog-outline"
+                                  ></use>
+                                </svg>
+
                                 <div
                                   class="navigation__dropdown__card-description"
                                 >
                                   <a
-                                    href="partners.html"
+                                    href="pricing.html"
                                     class="navigation__dropdown__card-link"
                                     role="menuitem"
-                                    aria-posinset="4"
-                                    aria-setsize="4"
-                                    aria-describedby="nav-card-Partners"
+                                    aria-posinset="5"
+                                    aria-setsize="5"
+                                    aria-describedby="nav-card-Compareallplans"
                                     tabindex="-1"
                                   >
                                     <h4
                                       class="navigation__dropdown__card-label"
                                     >
-                                      Partners
+                                      Compare all plans
+                                      <span
+                                        class="navigation__dropdown__card__arrow"
+                                      >
+                                        <svg
+                                          class="icon-svg icon-svg--arrow-right icon--coral"
+                                          width="20"
+                                          height="20"
+                                          viewbox="0 0 32 32"
+                                          preserveAspectRatio="xMinYMin"
+                                        >
+                                          <use
+                                            xlink:href="assets/svg/icons.svg#icon--arrow-right"
+                                          ></use>
+                                        </svg>
+                                      </span>
                                     </h4>
                                   </a>
-                                  <span
-                                    id="nav-card-Partners"
-                                    class="navigation__dropdown__card-summary"
-                                    >Learn more about our partner programs</span
-                                  >
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div
-                      class="navigation__dropdown__featured-section-list"
-                      role="presentation"
-                    >
-                      <div
-                        class="navigation__dropdown__section"
-                        data-nav-section="featuredreads"
-                        aria-labelledby="navigation__dropdown__column-label-featuredreads"
-                        role="group"
-                      >
-                        <h3
-                          id="navigation__dropdown__column-label-featuredreads"
-                          class="navigation__dropdown__section-label"
-                        >
-                          Featured Reads
-                        </h3>
-                        <div class="navigation__dropdown__column-wrapper">
-                          <ul
-                            class="navigation__dropdown__column"
-                            role="presentation"
-                          >
-                            <li
-                              class="navigation__dropdown__item -first"
-                              role="presentation"
-                            >
-                              <div
-                                class="navigation__dropdown__resource-card"
-                                aria-describedby="main-menu-help-1 main-menu-help-2 main-menu-help-3"
-                              >
-                                <img
-                                  class="navigation__dropdown__resource-card-image"
-                                  src="../luna1.co/846e1d.png"
-                                />
-                                <div
-                                  class="navigation__dropdown__resource-card-description"
-                                >
-                                  <a
-                                    href="http://blog.asana.com/2020/08/forms-branching-customization"
-                                    class="navigation__dropdown__card-link"
-                                    role="menuitem"
-                                    tabindex="-1"
-                                    aria-posinset="1"
-                                    aria-setsize="3"
-                                  >
-                                    <span
-                                      class="navigation__dropdown__card-label"
-                                      >New: Forms branching &
-                                      customization</span
-                                    >
-                                  </a>
-                                  <span
-                                    class="navigation__dropdown__resource-card-category"
-                                  >
-                                    <span class="sr-only">,</span>Blog
-                                  </span>
-                                  <span
-                                    class="navigation__dropdown__resource-card-cta"
-                                  >
-                                    Read More
-                                    <span
-                                      class="navigation__dropdown__card__arrow"
-                                    >
-                                      <svg
-                                        class="icon-svg icon-svg--arrow-right icon--gray"
-                                        width="20"
-                                        height="20"
-                                        viewbox="0 0 32 32"
-                                        preserveAspectRatio="xMinYMin"
-                                      >
-                                        <use
-                                          xlink:href="assets/svg/icons.svg#icon--arrow-right"
-                                        ></use>
-                                      </svg>
-                                    </span>
-                                  </span>
-                                </div>
-                              </div>
-                            </li>
-
-                            <li
-                              class="navigation__dropdown__item"
-                              role="presentation"
-                            >
-                              <div
-                                class="navigation__dropdown__resource-card"
-                                aria-describedby="main-menu-help-1 main-menu-help-2 main-menu-help-3"
-                              >
-                                <img
-                                  class="navigation__dropdown__resource-card-image"
-                                  src="../luna1.co/f9b608.png"
-                                />
-                                <div
-                                  class="navigation__dropdown__resource-card-description"
-                                >
-                                  <a
-                                    href="https://blog.asana.com/2020/07/goals/"
-                                    class="navigation__dropdown__card-link"
-                                    role="menuitem"
-                                    tabindex="-1"
-                                    aria-posinset="2"
-                                    aria-setsize="3"
-                                  >
-                                    <span
-                                      class="navigation__dropdown__card-label"
-                                      >New: Set, track, and achieve your most
-                                      important company goals</span
-                                    >
-                                  </a>
-                                  <span
-                                    class="navigation__dropdown__resource-card-category"
-                                  >
-                                    <span class="sr-only">,</span>Blog
-                                  </span>
-                                  <span
-                                    class="navigation__dropdown__resource-card-cta"
-                                  >
-                                    Read More
-                                    <span
-                                      class="navigation__dropdown__card__arrow"
-                                    >
-                                      <svg
-                                        class="icon-svg icon-svg--arrow-right icon--gray"
-                                        width="20"
-                                        height="20"
-                                        viewbox="0 0 32 32"
-                                        preserveAspectRatio="xMinYMin"
-                                      >
-                                        <use
-                                          xlink:href="assets/svg/icons.svg#icon--arrow-right"
-                                        ></use>
-                                      </svg>
-                                    </span>
-                                  </span>
-                                </div>
-                              </div>
-                            </li>
-
-                            <li
-                              class="navigation__dropdown__item -last"
-                              role="presentation"
-                            >
-                              <div
-                                class="navigation__dropdown__resource-card"
-                                aria-describedby="main-menu-help-1 main-menu-help-2 main-menu-help-3"
-                              >
-                                <img
-                                  class="navigation__dropdown__resource-card-image"
-                                  src="../luna1.co/12695f.png"
-                                />
-                                <div
-                                  class="navigation__dropdown__resource-card-description"
-                                >
-                                  <a
-                                    href="resources/okr-goal-management-ebook.html"
-                                    class="navigation__dropdown__card-link"
-                                    role="menuitem"
-                                    tabindex="-1"
-                                    aria-posinset="3"
-                                    aria-setsize="3"
-                                  >
-                                    <span
-                                      class="navigation__dropdown__card-label"
-                                      >Set OKRs the right way</span
-                                    >
-                                  </a>
-                                  <span
-                                    class="navigation__dropdown__resource-card-category"
-                                  >
-                                    <span class="sr-only">,</span>Report
-                                  </span>
-                                  <span
-                                    class="navigation__dropdown__resource-card-cta"
-                                  >
-                                    Read More
-                                    <span
-                                      class="navigation__dropdown__card__arrow"
-                                    >
-                                      <svg
-                                        class="icon-svg icon-svg--arrow-right icon--gray"
-                                        width="20"
-                                        height="20"
-                                        viewbox="0 0 32 32"
-                                        preserveAspectRatio="xMinYMin"
-                                      >
-                                        <use
-                                          xlink:href="assets/svg/icons.svg#icon--arrow-right"
-                                        ></use>
-                                      </svg>
-                                    </span>
-                                  </span>
                                 </div>
                               </div>
                             </li>
@@ -2709,7 +2168,7 @@
           <div class="rotatingGallery-slide" data-index="2">
             <img
               class="rotatingGallery-image"
-              src="../images/carousel/image2.png"
+              src="assets/images/carousel/image2.png"
               title="Launch new products"
               data-index="2"
             />
@@ -2731,7 +2190,7 @@
             <img
               class="rotatingGallery-image"
               alt="Manage your marketing campaign"
-              src="../images/carousel/image3.png"
+              src="assets/images/carousel/image3.png"
               title="Manage your marketing campaign"
               data-index="3"
             />
@@ -2743,11 +2202,7 @@
               </p>
 
               <div class="rotatingGallery-text -smaller">
-                <a
-                  href="teams/marketing.html"
-                  title="Learn more"
-                  class="-white"
-                  id=""
+                <a href="#" title="Learn more" class="-white" id=""
                   >Learn more</a
                 >
               </div>
@@ -2756,6 +2211,7 @@
           <div class="rotatingGallery-slide" data-index="4">
             <img
               class="rotatingGallery-image"
+              src="assets/images/carousel/image1.png"
               alt="Standardize your IT requests"
               title="Standardize your IT requests"
               data-index="4"
@@ -2768,104 +2224,7 @@
               </p>
 
               <div class="rotatingGallery-text -smaller">
-                <a href="teams/it.html" title="Learn more" class="-white" id=""
-                  >Learn more</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="rotatingGallery-slide" data-index="5">
-            <img
-              class="rotatingGallery-image"
-              alt="Track company goals and milestones"
-              src="../luna1.co/55666a.png"
-              title="Track company goals and milestones"
-              data-index="5"
-            />
-
-            <div class="rotatingGallery-slide-content">
-              <p class="rotatingGallery-text rotatingGallery-description">
-                Track company goals and milestones so everyone understands how
-                their work fits into the big picture.
-              </p>
-
-              <div class="rotatingGallery-text -smaller">
-                <a
-                  href="teams/company-wide.html"
-                  title="Learn more"
-                  class="-white"
-                  id=""
-                  >Learn more</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="rotatingGallery-slide" data-index="6">
-            <img
-              class="rotatingGallery-image"
-              alt="Launch new products"
-              title="Launch new products"
-              data-index="6"
-            />
-
-            <div class="rotatingGallery-slide-content">
-              <p class="rotatingGallery-text rotatingGallery-description">
-                Launch new products with ease by keeping each team on the same
-                page about who’s doing what, by when.
-              </p>
-
-              <div class="rotatingGallery-text -smaller">
-                <a
-                  href="teams/product-managers.html"
-                  title="Learn more"
-                  class="-white"
-                  id=""
-                  >Learn more</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="rotatingGallery-slide" data-index="7">
-            <img
-              class="rotatingGallery-image"
-              alt="Manage your marketing campaign"
-              title="Manage your marketing campaign"
-              data-index="7"
-            />
-
-            <div class="rotatingGallery-slide-content">
-              <p class="rotatingGallery-text rotatingGallery-description">
-                Manage all the moving pieces of your marketing campaign in one
-                place so you can hit your deadlines.
-              </p>
-
-              <div class="rotatingGallery-text -smaller">
-                <a
-                  href="teams/marketing.html"
-                  title="Learn more"
-                  class="-white"
-                  id=""
-                  >Learn more</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="rotatingGallery-slide" data-index="8">
-            <img
-              class="rotatingGallery-image"
-              alt="Standardize your IT requests"
-              title="Standardize your IT requests"
-              data-index="8"
-            />
-
-            <div class="rotatingGallery-slide-content">
-              <p class="rotatingGallery-text rotatingGallery-description">
-                Standardize your IT request process so requests get taken care
-                of quickly and easily.
-              </p>
-
-              <div class="rotatingGallery-text -smaller">
-                <a href="teams/it.html" title="Learn more" class="-white" id=""
+                <a href="#" title="Learn more" class="-white" id=""
                   >Learn more</a
                 >
               </div>
@@ -2874,8 +2233,6 @@
         </div>
       </div>
     </section>
-
-    <script src="../luna1.co/assets/dist/hashed/js/page-specific/rotating-gallery-23b631878a.js"></script>
 
     <section class="imageText -bg-gray">
       <div class="container imageText-item">
