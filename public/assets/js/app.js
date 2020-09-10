@@ -76,7 +76,6 @@
             },
           ],
         }),
-        o.sticky({ topSpacing: 50, bottomSpacing: 0 }),
         t.click(function () {
           document.getElementById("apps-directory-scroll-to").scrollIntoView();
         });

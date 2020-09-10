@@ -1100,7 +1100,6 @@ form.mktoForm.marketing-embed-form
   margin-right: auto;
   transition: width 0.15s;
   width: calc(100% - 64px);
-  max-width: 100% !important;
 }
 .-full.customerMarquee-header,
 .container.-full {
@@ -5427,7 +5426,7 @@ html.is-logged-in
   display: none;
 }
 .page-goals .goals-hero {
-  background: url(https://luna1.co/1b22ca.png) bottom #e8ecee;
+  background: url(../images/goals/banner.png) bottom #e8ecee;
   background-size: contain;
   background-repeat: no-repeat;
   color: #6f7782;
@@ -5503,7 +5502,7 @@ html.is-logged-in
   display: none;
 }
 .page-goals .goals-midpage-cta .narrowCtaBanner {
-  background: url(https://luna1.co/57e1a4.png);
+  background: url(../images/goals/narrow-banner.png);
   background-size: cover;
 }
 .page-goals .methodology-image .lazyImage {
@@ -9879,7 +9878,7 @@ form.mktoForm.marketing-embed-form
   margin-bottom: 32px;
 }
 .page--template-gallery--gallery .templates-segmentPanels {
-  background: #f6f8f9 url(/assets/img/three-dots-gray.png) 50% 20% fixed;
+  background: #f6f8f9 url(../img/three-dots-gray.png) 50% 20% fixed;
   padding-top: 96px;
 }
 .page--template-gallery--gallery .templates-segmentPanels-wrapper {
@@ -18178,7 +18177,7 @@ form.mktoForm.marketing-embed-form
   padding-bottom: 0;
 }
 .narrowCtaBanner {
-  background: url(https://luna1.co/89efa3.png) #222b37;
+  background: url(../images/goals/narrow-banner.png) #222b37;
   background-size: cover;
   border-radius: 5px;
   display: flex;
