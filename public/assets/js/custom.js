@@ -49,9 +49,16 @@ $(document).ready(function () {
     if ($(this).hasClass("-active")) {
       $(this).removeClass("-active");
       $(".horizontalNavigation ").removeClass("-active");
+      $(e.target)
+        .parents()
+        .find(".navigation__dropdown")
+        .removeClass("-active");
+      console.log($(e.target).parents().find(".navigation__dropdown"));
+      $(".siteHeader").removeClass("-dropdown-active");
     } else {
       $(this).addClass("-active");
       $(".horizontalNavigation ").addClass("-active");
+      $(".siteHeader").addClass("-dropdown-active");
     }
     document.getElementsByTagName("html")[0].classList.toggle("-no-scroll");
   });
