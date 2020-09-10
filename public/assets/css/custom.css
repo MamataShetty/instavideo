@@ -11127,7 +11127,7 @@ html.-no-scroll body {
   padding-top: 0 !important;
 }
 .centerTextIcon.-timeline-icon:before {
-  background: url(https://luna1.co/36de13.png) no-repeat 50%;
+  background: url(../images/36de13.png) no-repeat 50%;
   background-size: contain;
   content: "";
   display: block;
