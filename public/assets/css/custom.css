@@ -9002,7 +9002,7 @@ html.is-logged-in
   }
 }
 .page-feature .feature-featureList:before {
-  background: url(https://luna1.co/040114.png) no-repeat 50%;
+  background: url(../images/040114.png) no-repeat 50%;
   background-size: cover;
   left: 0;
   top: 0;
@@ -23815,12 +23815,17 @@ html[lang="de"] #signup .modal-container.premium-reminder-modal-transition {
   padding: 0;
 }
 .siteHeader .navigation__dropdown__column {
-  list-style: none;
+  list-style: none; 
   margin: 0;
   padding: 0;
 }
 .siteHeader .navigation__dropdown__column + .navigation__dropdown__column {
   margin-left: 56px;
+}
+@media (min-width:992px) and (max-width:1200px) {
+  .siteHeader .navigation__dropdown__column + .navigation__dropdown__column { 
+    margin-left:20px;
+  }
 }
 .siteHeader .navigation__dropdown__column.-resource-card-column {
   scroll-snap-type: x mandatory;
