@@ -23633,6 +23633,7 @@ html[lang="de"] #signup .modal-container.premium-reminder-modal-transition {
   pointer-events: none;
   width: 100%;
   max-height: calc(100vh - 101px);
+  min-height: 700px;
   max-width: 1440px;
   padding: 0 64px;
   margin: 0 auto;
@@ -23719,9 +23720,6 @@ html[lang="de"] #signup .modal-container.premium-reminder-modal-transition {
   .siteHeader .navigation__dropdown__featured-background {
     width: 46vw;
   }
-}
-@media (min-width: 1300px) and (min-height: 900px) {
-
 }
 .siteHeader .navigation__dropdown__section {
   padding-bottom: 20px;
