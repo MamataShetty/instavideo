@@ -15,8 +15,8 @@
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script type="text/javascript" src="assets/js/custom.js"></script>
-    <script type="text/javascript" src="assets/js/app.js"></script>
-    <script type="text/javascript" src="assets/js/customer-marquee.js"></script>
+    <script type="text/javascript" src="assets/js/rotate-gallery.js"></script>
+    <script type="text/javascript" src="assets/js/feature-carousel.js"></script>
   </head>
   <body class="page--page-builder">
     <header class="siteHeader">
@@ -1768,157 +1768,654 @@
       <div class="navigation__scrim"></div>
     </header>
 
-    <section class="heroHeadline -light-grey-gradient">
-      <div class="heroHeadline-text-wrapper">
-        <h1 class="heroHeadline-headline -light">
-          Bring products to market faster with Instavideo
-        </h1>
+    <section class="sectionBuilder -bg-gray -first">
+      <div class="container">
+        <div class="row -spacing-3 -ta-center">
+          <div class="sm-10 sm-off-1 lg-10 lg-off-1 xxl-10 xxl-off-1">
+            <div class="textStack">
+              <h1 class="heading -h2">Manage projects with one tool</h1>
 
-        <p class="heroHeadline-subhead -large">
-          Instavideo is the easiest way for product managers to track their
-          team&#8217;s work&mdash;and get results.
-        </p>
-        <div class="heroHeadline-cta">
-          <a
-            href="/"
-            title="Try for free"
-            onclick=" "
-            class="js-cta-create-account button -large invisible-logged-in gtm--trial_button hidden-device-mobile cta-create-account-desktop"
-          >
-            Try for free
-          </a>
-
-          <a
-            href="/"
-            title="Try for free"
-            onclick=""
-            class="js-cta-create-account button -large invisible-logged-in visible-device-mobile -mobile-full gtm--trial_button"
-          >
-            Try for free
-          </a>
-
-          <a
-            href="/"
-            onclick=""
-            class="js-cta-create-account button -large invisible-logged-out -mobile-full"
-            title="Try for free"
-          >
-            Try for free
-          </a>
+              <p class="subheading -large col-medium-8 col-medium-offset-2">
+                You don’t have to shuffle between spreadsheets, email, and other
+                tools to keep your projects on course. Track and manage
+                everything&mdash;from day one to the deadline&mdash;with Asana.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <section class="textblocks">
-      <div class="container -narrow">
-        <header class="textblocks-header row">
-          <div class="col-medium-8 col-medium-push-2">
-            <h3>Instavideo is the easiest way for product teams to&#8230;</h3>
-          </div>
-        </header>
-
-        <div class="textblocks-row -center" data-grid>
-          <div class="textblock">
-            <div class="textblock-content -center">
-              <span class="textblock-icon">
-                <svg
-                  class="icon-svg icon-svg--clock icon--teal"
-                  width="32"
-                  height="32"
-                  viewbox="0 0 32 32"
-                  preserveAspectRatio="xMinYMin"
-                >
-                  <use xlink:href="../assets/svg/icons.svg#icon--clock"></use>
-                </svg>
-              </span>
-
-              <p class="textblock-title -large">Plan product roadmaps</p>
-
-              <p class="textblock-body">
-                Use Instavideo as a source of truth to set goals, align on
-                priorities, and
-                <a href="/">track product milestones</a>.
-              </p>
-            </div>
-          </div>
-
-          <div class="textblock">
-            <div class="textblock-content -center">
-              <span class="textblock-icon">
-                <svg
-                  class="icon-svg icon-svg--project icon--coral"
-                  width="32"
-                  height="32"
-                  viewbox="0 0 32 32"
-                  preserveAspectRatio="xMinYMin"
-                >
-                  <use xlink:href="../assets/svg/icons.svg#icon--project"></use>
-                </svg>
-              </span>
-
-              <p class="textblock-title -large">Simplify sprint planning</p>
-
-              <p class="textblock-body">
-                Give your team
-                <a href="/">clarity on sprint plans</a>, milestones, and launch
-                dates to keep everyone focused.
-              </p>
-            </div>
-          </div>
-
-          <div class="textblock">
-            <div class="textblock-content -center">
-              <span class="textblock-icon">
-                <svg
-                  class="icon-svg icon-svg--check icon--green"
-                  width="32"
-                  height="32"
-                  viewbox="0 0 32 32"
-                  preserveAspectRatio="xMinYMin"
-                >
-                  <use xlink:href="../assets/svg/icons.svg#icon--check"></use>
-                </svg>
-              </span>
-
-              <p class="textblock-title -large">Have smoother launches</p>
-
-              <p class="textblock-body">
-                Coordinate and communicate with teams across your company to
-                <a href="/">launch features with ease</a>.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-small-6 col-small-offset-3">
-            <a href="/"
-              ><button class="textblocks-cta-button -large">
-                More ways to use Instavideo
-              </button></a
+        <div class="row -ta-center">
+          <div class="col-xsmall-12 signupForm-homepage-center">
+            <a
+              href="../create-account.html"
+              title="Try for free"
+              onclick=" "
+              class="js-cta-create-account button -large invisible-logged-in gtm--trial_button hidden-device-mobile cta-create-account-desktop"
             >
+              Try for free
+            </a>
+
+            <a
+              href="#signup"
+              title="Try for free"
+              onclick=""
+              class="js-cta-create-account button -large invisible-logged-in visible-device-mobile -mobile-full gtm--trial_button"
+            >
+              Try for free
+            </a>
+
+            <a
+              href="https://app.asana.com/-/upgrade?trial=true"
+              onclick=""
+              class="js-cta-create-account button -large invisible-logged-out -mobile-full"
+              title="Try for free"
+            >
+              Try for free
+            </a>
           </div>
         </div>
       </div>
     </section>
+    <section class="sectionBuilder featuresCarousel-wrapper -mini">
+      <div class="container -wide">
+        <div class="row featuresCarousel-masthead">
+          <div
+            class="col-medium-8 col-medium-offset-2 col-large-6 col-large-offset-3"
+          >
+            <div class="textStack">
+              <span class="-label"> Features </span>
 
-    <section class="imageText -bg-gray">
-      <div class="container imageText-item">
-        <div class="row imageText-row -small-middle">
-          <div class="imageText-image -left -screenshot">
-            <img src="/assets/images/carousel/image1.png" />
+              <h4 class="heading -h4">
+                Ways a project management tool can help your team
+              </h4>
+
+              <p class="subheading featuresCarousel-subhead"></p>
+            </div>
           </div>
+        </div>
+        <div class="row -spacing-8">
+          <div class="col-xsmall-12">
+            <div class="featuresCarousel row">
+              <div
+                class="featuresCarousel-feature col-xsmall-12 col-medium-7 col-xlarge-offset-1 col-xlarge-6"
+              >
+                <div class="featuresCarousel-slide-wrapper">
+                  <div class="featuresCarousel-slide -is-active">
+                    <video
+                      class="videoAnimation"
+                      src="/assets/images/goals/banner-video.mp4"
+                      muted
+                      playsinline
+                      autoplay
+                      loop
+                    ></video>
+                  </div>
 
-          <div class="imageText-text -right">
-            <h3 class="-h4">Move fast without breaking things</h3>
+                  <div class="featuresCarousel-mobile-selection">
+                    <h6 class="featuresCarousel-mobile-title">
+                      Custom templates
+                    </h6>
 
-            <p>
-              Using Instavideo as your product roadmap tool helps you track
-              project progress, identify blockers, and shift resources on the
-              fly.
-            </p>
+                    <p class="featuresCarousel-mobile-subtitle">
+                      Convert common projects into custom templates. You won’t
+                      have to update deadlines every time you start a new
+                      project, and your team has a clear process to follow.
+                    </p>
+                  </div>
+                </div>
+                <div class="featuresCarousel-slide-wrapper">
+                  <div class="featuresCarousel-slide">
+                    <video
+                      class="videoAnimation"
+                      src="/assets/images/goals/banner-video.mp4"
+                      muted
+                      playsinline
+                      autoplay
+                      loop
+                    ></video>
+                  </div>
 
-            <div class="">
-              <a href="/" class="button -large">
-                Learn more about Instavideo
+                  <div class="featuresCarousel-mobile-selection">
+                    <h6 class="featuresCarousel-mobile-title">
+                      Work request forms
+                    </h6>
+
+                    <p class="featuresCarousel-mobile-subtitle">
+                      Create a formal submission process for work requests with
+                      Forms. Get the details your team needs, and easily track
+                      requests in one place.
+                    </p>
+
+                    <a href="forms.html" class="featuresCarousel-mobile-link">
+                      Learn about Forms
+                    </a>
+                  </div>
+                </div>
+                <div class="featuresCarousel-slide-wrapper">
+                  <div class="featuresCarousel-slide">
+                    <video
+                      class="videoAnimation"
+                      src="https://instavideo12.web.app/assets/images/goals/banner-video.mp4"
+                      muted
+                      playsinline
+                      autoplay
+                      loop
+                    ></video>
+                  </div>
+
+                  <div class="featuresCarousel-mobile-selection">
+                    <h6 class="featuresCarousel-mobile-title">
+                      Dependency date shifting
+                    </h6>
+
+                    <p class="featuresCarousel-mobile-subtitle">
+                      We can’t stop deadlines from changing, but we can save you
+                      from manually updating project schedules when they do.
+                    </p>
+                  </div>
+                </div>
+                <div class="featuresCarousel-slide-wrapper">
+                  <div class="featuresCarousel-slide">
+                    <video
+                      class="videoAnimation"
+                      src="https://instavideo12.web.app/assets/images/goals/banner-video.mp4"
+                      muted
+                      playsinline
+                      autoplay
+                      loop
+                    ></video>
+                  </div>
+
+                  <div class="featuresCarousel-mobile-selection">
+                    <h6 class="featuresCarousel-mobile-title">Approvals</h6>
+
+                    <p class="featuresCarousel-mobile-subtitle">
+                      Streamline and clarify steps in your approvals process.
+                      Make sure everyone knows what needs to be approved, by
+                      when, and how—so work stays on track.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="featuresCarousel-selections col-12 col-medium-5 col-xlarge-4"
+              >
+                <div
+                  class="featuresCarousel-selection -is-active"
+                  data-index="1"
+                >
+                  <div class="featuresCarousel-progress -green">
+                    <span class="featuresCarousel-progress-bar -green"></span>
+                  </div>
+
+                  <div class="featuresCarousel-body">
+                    <h6 class="featuresCarousel-title">
+                      Custom templates
+                      <span class="featuresCarousel-chevron">
+                        <svg
+                          width="11px"
+                          height="7px"
+                          viewBox="0 0 11 7"
+                          version="1.1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                          <g
+                            stroke="none"
+                            stroke-width="1"
+                            fill="none"
+                            fill-rule="evenodd"
+                          >
+                            <g
+                              transform="translate(0.000000, -419.000000)"
+                              stroke="#B7BFC6"
+                              stroke-width="1.5"
+                            >
+                              <g transform="translate(-0.500000, 391.000000)">
+                                <g transform="translate(0.000000, 17.000000)">
+                                  <polyline
+                                    points="0.5 11.55 5.43814008 16.45 10.2999998 11.55"
+                                  ></polyline>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </span>
+                    </h6>
+
+                    <p class="featuresCarousel-subtitle">
+                      Convert common projects into custom templates. You won’t
+                      have to update deadlines every time you start a new
+                      project, and your team has a clear process to follow.
+                    </p>
+                  </div>
+                </div>
+                <div class="featuresCarousel-selection" data-index="2">
+                  <div class="featuresCarousel-progress -black">
+                    <span class="featuresCarousel-progress-bar -black"></span>
+                  </div>
+
+                  <div class="featuresCarousel-body">
+                    <h6 class="featuresCarousel-title">
+                      Work request forms
+                      <span class="featuresCarousel-chevron">
+                        <svg
+                          width="11px"
+                          height="7px"
+                          viewBox="0 0 11 7"
+                          version="1.1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                          <g
+                            stroke="none"
+                            stroke-width="1"
+                            fill="none"
+                            fill-rule="evenodd"
+                          >
+                            <g
+                              transform="translate(0.000000, -419.000000)"
+                              stroke="#B7BFC6"
+                              stroke-width="1.5"
+                            >
+                              <g transform="translate(-0.500000, 391.000000)">
+                                <g transform="translate(0.000000, 17.000000)">
+                                  <polyline
+                                    points="0.5 11.55 5.43814008 16.45 10.2999998 11.55"
+                                  ></polyline>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </span>
+                    </h6>
+
+                    <p class="featuresCarousel-subtitle">
+                      Create a formal submission process for work requests with
+                      Forms. Get the details your team needs, and easily track
+                      requests in one place.
+                    </p>
+
+                    <a href="forms.html" class="featuresCarousel-link">
+                      <span class="featuresCarousel-link-text"
+                        >Learn about Forms</span
+                      >
+                      <div class="arrowPacman -short">
+                        <div class="arrowPacman-clip">
+                          <svg
+                            width="100%"
+                            height="100%"
+                            viewBox="0 0 28 19"
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                          >
+                            <g stroke="none" stroke-width="1">
+                              <path
+                                d="M14.0384446,0 L12.8846104,1.00339949 L17.5361471,6.23552253 L0,6.23552253 L0,7.76448894 L17.5361471,7.76448894 L12.8846104,12.996612 L14.0384638,14 L20,7.00020068 L14.0384446,0 Z"
+                              ></path>
+                            </g>
+                          </svg>
+
+                          <svg
+                            width="100%"
+                            height="100%"
+                            viewBox="0 0 28 19"
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                          >
+                            <g stroke="none" stroke-width="1">
+                              <path
+                                d="M14.0384446,0 L12.8846104,1.00339949 L17.5361471,6.23552253 L0,6.23552253 L0,7.76448894 L17.5361471,7.76448894 L12.8846104,12.996612 L14.0384638,14 L20,7.00020068 L14.0384446,0 Z"
+                              ></path>
+                            </g>
+                          </svg>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="featuresCarousel-selection" data-index="3">
+                  <div class="featuresCarousel-progress -purple">
+                    <span class="featuresCarousel-progress-bar -purple"></span>
+                  </div>
+
+                  <div class="featuresCarousel-body">
+                    <h6 class="featuresCarousel-title">
+                      Dependency date shifting
+                      <span class="featuresCarousel-chevron">
+                        <svg
+                          width="11px"
+                          height="7px"
+                          viewBox="0 0 11 7"
+                          version="1.1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                          <g
+                            stroke="none"
+                            stroke-width="1"
+                            fill="none"
+                            fill-rule="evenodd"
+                          >
+                            <g
+                              transform="translate(0.000000, -419.000000)"
+                              stroke="#B7BFC6"
+                              stroke-width="1.5"
+                            >
+                              <g transform="translate(-0.500000, 391.000000)">
+                                <g transform="translate(0.000000, 17.000000)">
+                                  <polyline
+                                    points="0.5 11.55 5.43814008 16.45 10.2999998 11.55"
+                                  ></polyline>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </span>
+                    </h6>
+
+                    <p class="featuresCarousel-subtitle">
+                      We can’t stop deadlines from changing, but we can save you
+                      from manually updating project schedules when they do.
+                    </p>
+                  </div>
+                </div>
+                <div class="featuresCarousel-selection" data-index="4">
+                  <div class="featuresCarousel-progress -gold">
+                    <span class="featuresCarousel-progress-bar -gold"></span>
+                  </div>
+
+                  <div class="featuresCarousel-body">
+                    <h6 class="featuresCarousel-title">
+                      Approvals
+                      <span class="featuresCarousel-chevron">
+                        <svg
+                          width="11px"
+                          height="7px"
+                          viewBox="0 0 11 7"
+                          version="1.1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                          <g
+                            stroke="none"
+                            stroke-width="1"
+                            fill="none"
+                            fill-rule="evenodd"
+                          >
+                            <g
+                              transform="translate(0.000000, -419.000000)"
+                              stroke="#B7BFC6"
+                              stroke-width="1.5"
+                            >
+                              <g transform="translate(-0.500000, 391.000000)">
+                                <g transform="translate(0.000000, 17.000000)">
+                                  <polyline
+                                    points="0.5 11.55 5.43814008 16.45 10.2999998 11.55"
+                                  ></polyline>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </span>
+                    </h6>
+
+                    <p class="featuresCarousel-subtitle">
+                      Streamline and clarify steps in your approvals process.
+                      Make sure everyone knows what needs to be approved, by
+                      when, and how—so work stays on track.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="sectionBuilder -bg-gray -mini project-management-mini-question-section"
+    >
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-medium-8 col-medium-offset-2 col-large-6 col-large-offset-3"
+          >
+            <div class="textStack">
+              <h4 class="heading">What is project management software?</h4>
+
+              <p class="subheading -large">
+                It&apos;s a tool to help you plan, organize, and manage your
+                team&apos;s work, from start to finish. Good project management
+                software also acts as a
+                <a href="/">collaboration tool</a>. You can coordinate team
+                tasks so everyone knows who&apos;s doing what. Share feedback,
+                files, and status updates. Plus, get a complete view of work so
+                teams tackle the right tasks at the right time.
+              </p>
+
+              <a href="/" title="Learn more about features"
+                >Learn more about features</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sectionBuilder -bg-gray -mini -sm-top-padding">
+      <div class="container">
+        <div class="row -align-items-center">
+          <div
+            class="col-xsmall-12 col-small-5 col-small-offset-1 col-medium-5 col-medium-offset-1 online-project-management-software-img"
+          >
+            <img
+              class="-box-shadow"
+              src="/assets/images/carousel/image1.png"
+              alt="Online project management software"
+            />
+          </div>
+          <div
+            class="col-xsmall-12 col-small-5 col-small-offset-1 col-medium-4 col-medium-offset-1"
+          >
+            <div class="textStack">
+              <h4 class="heading">Why do you need it?</h4>
+
+              <p class="subheading">
+                Managing projects is hard work. Even harder if you don&apos;t
+                use software or have work spread across too many tools.
+                It&apos;s easy to lose track of all the moving pieces&mdash;and
+                tough to stay up to date. That’s when things fall through the
+                cracks. Use one tool to organize projects, make communication
+                easy, and meet deadlines.
+              </p>
+
+              <a href="/" title="Use Asana for your projects" class="" id=""
+                >Use Asana for your projects</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sectionBuilder">
+      <div class="container -wide">
+        <div class="row">
+          <div class="col-small-5">
+            <div class="textStack">
+              <h4 class="heading -h4">
+                Key benefits of<br />project management software
+              </h4>
+
+              <p class="subheading"></p>
+
+              <a href="/" title="Compare software" class="button -large"
+                >Compare software</a
+              >
+            </div>
+          </div>
+          <div class="col-small-6">
+            <section class="textblocks -project-managment-mini">
+              <div class="container -narrow">
+                <div class="textblocks-row -two" data-grid>
+                  <div class="textblock">
+                    <div class="textblock-content -two">
+                      <span class="textblock-icon">
+                        <svg
+                          class="icon-svg icon-svg--success icon--purple"
+                          width="32"
+                          height="32"
+                          viewbox="0 0 32 32"
+                          preserveAspectRatio="xMinYMin"
+                        >
+                          <use
+                            xlink:href="../assets/svg/icons.svg#icon--success"
+                          ></use>
+                        </svg>
+                      </span>
+
+                      <p class="textblock-title -large">Track progress</p>
+
+                      <p class="textblock-body">
+                        Get real-time status updates, run reports, and more. You
+                        know what&apos;s going on and can solve small issues
+                        before they become big problems.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="textblock">
+                    <div class="textblock-content -two">
+                      <span class="textblock-icon">
+                        <svg
+                          class="icon-svg icon-svg--work icon--teal"
+                          width="32"
+                          height="32"
+                          viewbox="0 0 32 32"
+                          preserveAspectRatio="xMinYMin"
+                        >
+                          <use
+                            xlink:href="../assets/svg/icons.svg#icon--work"
+                          ></use>
+                        </svg>
+                      </span>
+
+                      <p class="textblock-title -large">
+                        Improve collaboration
+                      </p>
+
+                      <p class="textblock-body">
+                        Make all the important things easy to find, like project
+                        plans and details, files, feedback, and more.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="textblock">
+                    <div class="textblock-content -two">
+                      <span class="textblock-icon">
+                        <svg
+                          class="icon-svg icon-svg--clock icon--green"
+                          width="32"
+                          height="32"
+                          viewbox="0 0 32 32"
+                          preserveAspectRatio="xMinYMin"
+                        >
+                          <use
+                            xlink:href="../assets/svg/icons.svg#icon--clock"
+                          ></use>
+                        </svg>
+                      </span>
+
+                      <p class="textblock-title -large">Stay on schedule</p>
+
+                      <p class="textblock-body">
+                        Map out goals and prioritize tasks. You get projects off
+                        the ground faster and meet deadlines&mdash;without
+                        scrambling at the last minute.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="textblock">
+                    <div class="textblock-content -two">
+                      <span class="textblock-icon">
+                        <svg
+                          class="icon-svg icon-svg--conversations icon--coral"
+                          width="32"
+                          height="32"
+                          viewbox="0 0 32 32"
+                          preserveAspectRatio="xMinYMin"
+                        >
+                          <use
+                            xlink:href="../assets/svg/icons.svg#icon--conversations"
+                          ></use>
+                        </svg>
+                      </span>
+
+                      <p class="textblock-title -large">
+                        Streamline communication
+                      </p>
+
+                      <p class="textblock-body">
+                        Keep conversations with teammates, clients, and vendors
+                        in one place, and keep everyone on the same page.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="col-xsmall-12 col-small-10 col-small-offset-1 col-medium-10 col-medium-offset-1 section-divider"
+          ></div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="sectionBuilder -bg-gray -mini project-management-mini-bottom-cta-section"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="l-8-2off -ta-center">
+            <div class="textStack">
+              <h4 class="heading -h3">Manage your projects with Asana</h4>
+
+              <p class="subheading -large">
+                See why millions of people use Asana to get better work done.
+                Start your free 30-day trial.
+              </p>
+
+              <a
+                href="/"
+                title="Try for free"
+                class="js-cta-create-account button -large invisible-logged-in gtm--trial_button hidden-device-mobile cta-create-account-desktop"
+              >
+                Try for free
+              </a>
+
+              <a
+                href="#"
+                title="Try for free"
+                class="js-cta-create-account button -large invisible-logged-in visible-device-mobile -mobile-full gtm--trial_button"
+              >
+                Try for free
+              </a>
+
+              <a
+                href="/"
+                class="js-cta-create-account button -large invisible-logged-out -mobile-full"
+                title="Try for free"
+              >
+                Try for free
               </a>
             </div>
           </div>
@@ -1926,64 +2423,6 @@
       </div>
     </section>
 
-    <div class="singlevideo">
-      <div class="container -narrow">
-        <div class="row">
-          <div class="col-small-12">
-            <div class="singlevideo-video-wrapper">
-              <iframe
-                src="https://fast.wistia.net/embed/iframe/8ewjuo7ox0"
-                allowtransparency="true"
-                frameborder="0"
-                scrolling="no"
-                class="wistia_embed"
-                name="wistia_embed"
-                allowfullscreen
-                mozallowfullscreen
-                webkitallowfullscreen
-                oallowful]lscreen
-                msallowfullscreen
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <section class="genericCTA hidden-logged-in -bg-gray">
-      <div class="container">
-        <div class="genericCTA-text -narrow">
-          <h3 class="genericCTA-title">Create your first project</h3>
-
-          <aside class="genericCTA-cta">
-            <a
-              href="/"
-              title="Try for free"
-              class="js-cta-create-account button -large invisible-logged-in gtm--trial_button hidden-device-mobile cta-create-account-desktop"
-            >
-              Try for free
-            </a>
-
-            <a
-              href="/"
-              title="Try for free"
-              class="js-cta-create-account button -large invisible-logged-in visible-device-mobile -mobile-full gtm--trial_button"
-            >
-              Try for free
-            </a>
-
-            <a
-              href="/"
-              onclick=""
-              class="js-cta-create-account button -large invisible-logged-out -mobile-full"
-              title="Try for free"
-            >
-              Try for free
-            </a>
-          </aside>
-        </div>
-      </div>
-    </section>
     <footer class="siteFooter">
       <div class="siteFooter__main__wrapper py-2 py-sm-5">
         <div class="container -wide">
