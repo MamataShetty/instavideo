@@ -14,11 +14,11 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-    <script type="text/javascript" src="assets/js/rotate-gallery.js"></script>
     <script type="text/javascript" src="assets/js/custom.js"></script>
-    <script type="text/javascript" src="assets/js/customer-marquee.js"></script>
+    <script type="text/javascript" src="assets/js/rotate-gallery.js"></script>
+    <script type="text/javascript" src="assets/js/feature-carousel.js"></script>
   </head>
-  <body class="page--section-builder page-portfolios g-in">
+  <body class="page--page-builder">
     <header class="siteHeader">
       <div class="siteHeader__row">
         <div class="siteHeader__wrapper">
@@ -1621,22 +1621,20 @@
               <div class="horizontalNavigation__mobile-buttons">
                 <a
                   class="button hidden-logged-in -large -mobile-full hidden-device-mobile"
-                  href="create-account.html"
+                  href="/"
                   >Try for free</a
                 >
                 <a
                   class="button hidden-logged-in -large -mobile-full visible-device-mobile"
-                  href="#signup"
+                  href="/"
                   >Try for free</a
                 >
                 <a
                   class="button -border hidden-logged-in -large -mobile-full"
-                  href="https://app.asana.com/"
+                  href="/"
                   >Log In</a
                 >
-                <a
-                  class="button hidden-logged-out -large -mobile-full"
-                  href="https://app.asana.com/"
+                <a class="button hidden-logged-out -large -mobile-full" href="/"
                   >Go to Instavideo</a
                 >
               </div>
@@ -1770,534 +1768,231 @@
       <div class="navigation__scrim"></div>
     </header>
 
-    <section class="sectionBuilder portfolios-hero -first">
-      <div class="container -full">
-        <div class="row">
-          <div class="portfolios-hero-text">
-            <div class="textStack">
-              <span class="-label"> Introducing Portfolios </span>
-              <h1 class="heading -white portfolios-hero-headline">
-                Monitor all of your initiatives in one place
-              </h1>
-              <p class="subheading portfolios-hero-subhead">
-                Portfolios is the mission control for everything you need to
-                track in your business—from strategy to execution.
-              </p>
-              <a
-                href="#"
-                title="Try Business"
-                class="portfolios-button button -large -light visible-logged-in hidden-device-mobile"
-                >Try Business</a
-              >
-              <a
-                href="#"
-                title="Try Business"
-                class="portfolios-button button -large -light visible-logged-in visible-device-mobile"
-                >Try Business</a
-              >
-            </div>
+    <section class="heroHeadline -light-grey-gradient">
+      <div class="heroHeadline-text-wrapper">
+        <h1 class="heroHeadline-headline -light">
+          Workflow management software for teams
+        </h1>
+
+        <p class="heroHeadline-subhead -large">
+          So your team always knows who&apos;s doing what by when.
+        </p>
+
+        <div class="heroHeadline-cta">
+          <a
+            href="/"
+            title="Try for free"
+            onclick=" "
+            class="js-cta-create-account button -large invisible-logged-in gtm--trial_button hidden-device-mobile cta-create-account-desktop"
+          >
+            Try for free
+          </a>
+
+          <a
+            href="/"
+            `
+            title="Try for free"
+            onclick=""
+            class="js-cta-create-account button -large invisible-logged-in visible-device-mobile -mobile-full gtm--trial_button"
+          >
+            Try for free
+          </a>
+
+          <a
+            href="/"
+            class="js-cta-create-account button -large invisible-logged-out -mobile-full"
+            title="Try for free"
+          >
+            Try for free
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="centerTextIcon -no-bottom-padding">
+      <div class="container -narrow">
+        <header class="row">
+          <div class="col-medium-6 col-medium-push-3">
+            <h4 class="">What is workflow management?</h4>
+
+            <p>
+              A workflow is the process of how you get stuff done. It&rsquo;s a
+              system that makes work more efficient while keeping everyone on
+              the same page. Workflow management is all about building and
+              tracking these processes. Asana is like a home base for all your
+              workflows: use it as a tool to create workflows and track your
+              team&rsquo;s work. Here are some examples of common
+              workflows&colon;
+            </p>
           </div>
-          <div class="portfolios-hero-animation">
-            <video
-              class="videoAnimation"
-              src="../assets/images/goals/banner-video.mp4"
-              muted=""
-              playsinline=""
-              autoplay=""
-              loop=""
-            ></video>
+        </header>
+      </div>
+    </section>
+
+    <section class="imageText -bg-gray">
+      <div class="container imageText-item">
+        <div class="row imageText-row -small-middle">
+          <div class="imageText-image -left -screenshot">
+            <img src="/assets/images/marketing-banner.png" />
+          </div>
+
+          <div class="imageText-text -right">
+            <h3 class="-h4">Using Instavideo to manage workflows</h3>
+
+            <p>
+              Customize workflows to fit your team and company&rsquo;s needs
+              &mdash; so everyone tackles the right tasks at the right time.
+            </p>
+
+            <div class="">
+              <a href="/product" class="button -large">
+                Learn more about Instavideo
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="sectionBuilder py-9 mb-0 mb-lg-0">
-      <div class="container customerMarquee-container">
-        <div class="row customerMarquee -no-gutters">
-          <div class="customerMarquee-row">
-            <div class="customerMarquee-wrapper">
-              <article class="customerMarquee-item -bg-black -text -inverted">
-                <div class="customerMarquee-item-content-wrapper">
-                  <div class="customerMarquee-item-content">
-                    <img
-                      draggable="false"
-                      class="customerMarquee-item-logo -ab-inbev"
-                      src="https://luna1.co/9b4133.png"
-                    />
 
-                    <blockquote class="customerMarquee-item-text -ab-inbev">
-                      <p>
-                        Lorem ipsum dolor ad m irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugi
-                      </p>
+    <section class="textblocks">
+      <div class="container -narrow">
+        <header class="textblocks-header row">
+          <div class="col-medium-8 col-medium-push-2">
+            <h3>Tips for establishing great workflow management</h3>
+          </div>
+        </header>
 
-                      <cite>
-                        Laurelle Simonetti — Digital Project Manager
-                      </cite>
-                    </blockquote>
-                  </div>
-                </div>
-              </article>
-              <article class="customerMarquee-item -bg-gold -text">
-                <div class="customerMarquee-item-content-wrapper">
-                  <div class="customerMarquee-item-content">
-                    <img
-                      draggable="false"
-                      class="customerMarquee-item-logo -ab-inbev"
-                      src="https://luna1.co/9b4133.png"
-                    />
+        <div class="textblocks-row" data-grid>
+          <div class="textblock">
+            <div class="textblock-content">
+              <p class="textblock-title -large">
+                1. Decide how and when to communicate
+              </p>
 
-                    <blockquote class="customerMarquee-item-text -ab-inbev">
-                      <p>
-                        Lorem ipsum dolor ad m irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugi
-                      </p>
-
-                      <cite>
-                        Laurelle Simonetti — Digital Project Manager
-                      </cite>
-                    </blockquote>
-                  </div>
-                </div>
-              </article>
-              <article class="customerMarquee-item -bg-pink -text">
-                <div class="customerMarquee-item-content-wrapper">
-                  <div class="customerMarquee-item-content">
-                    <img
-                      draggable="false"
-                      class="customerMarquee-item-logo -ab-inbev"
-                      src="https://luna1.co/9b4133.png"
-                    />
-
-                    <blockquote class="customerMarquee-item-text -ab-inbev">
-                      <p>
-                        Lorem ipsum dolor ad m irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugi
-                      </p>
-
-                      <cite>
-                        Laurelle Simonetti — Digital Project Manager
-                      </cite>
-                    </blockquote>
-                  </div>
-                </div>
-              </article>
-              <article class="customerMarquee-item -bg-black -text -inverted">
-                <div class="customerMarquee-item-content-wrapper">
-                  <div class="customerMarquee-item-content">
-                    <img
-                      draggable="false"
-                      class="customerMarquee-item-logo -ab-inbev"
-                      src="https://luna1.co/9b4133.png"
-                    />
-
-                    <blockquote class="customerMarquee-item-text -ab-inbev">
-                      <p>
-                        Lorem ipsum dolor ad m irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugi
-                      </p>
-
-                      <cite>
-                        Laurelle Simonetti — Digital Project Manager
-                      </cite>
-                    </blockquote>
-                  </div>
-                </div>
-              </article>
-              <article class="customerMarquee-item -bg-teal -text">
-                <div class="customerMarquee-item-content-wrapper">
-                  <div class="customerMarquee-item-content">
-                    <img
-                      draggable="false"
-                      class="customerMarquee-item-logo -ab-inbev"
-                      src="https://luna1.co/9b4133.png"
-                    />
-
-                    <blockquote class="customerMarquee-item-text -ab-inbev">
-                      <p>
-                        Lorem ipsum dolor ad m irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugi
-                      </p>
-
-                      <cite>
-                        Laurelle Simonetti — Digital Project Manager
-                      </cite>
-                    </blockquote>
-                  </div>
-                </div>
-              </article>
-              <article class="customerMarquee-item -bg-gray -text">
-                <div class="customerMarquee-item-content-wrapper">
-                  <div class="customerMarquee-item-content">
-                    <img
-                      draggable="false"
-                      class="customerMarquee-item-logo -ab-inbev"
-                      src="https://luna1.co/9b4133.png"
-                    />
-
-                    <blockquote class="customerMarquee-item-text -ab-inbev">
-                      <p>
-                        Lorem ipsum dolor ad m irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugi
-                      </p>
-
-                      <cite>
-                        Laurelle Simonetti — Digital Project Manager
-                      </cite>
-                    </blockquote>
-                  </div>
-                </div>
-              </article>
+              <p class="textblock-body">
+                To make sure everyone&rsquo;s on the same page, set
+                communication guidelines in advance, make the higher-level
+                mission known to everyone, and encourage feedback.
+              </p>
             </div>
-            <svg
-              class="drag-cursor"
-              width="108px"
-              height="70px"
-              viewBox="0 0 108 70"
-              version="1.1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
+          </div>
+
+          <div class="textblock">
+            <div class="textblock-content">
+              <p class="textblock-title -large">
+                2. Streamline the things you do regularly
+              </p>
+
+              <p class="textblock-body">
+                Think about all the places where you can save time on recurring
+                work. Is there a way to automate any of your tasks?
+              </p>
+            </div>
+          </div>
+
+          <div class="textblock">
+            <div class="textblock-content">
+              <p class="textblock-title -large">
+                3. Have an internal knowledge base
+              </p>
+
+              <p class="textblock-body">
+                Make it easy for collaborators to access information and
+                projects by creating a central database of resources.
+              </p>
+            </div>
+          </div>
+
+          <div class="textblock">
+            <div class="textblock-content">
+              <p class="textblock-title -large">
+                4. Define responsibilities and expectations at the start
+              </p>
+
+              <p class="textblock-body">
+                Be sure to answer these questions for any workflow: What are the
+                exact deliverables? Who&rsquo;s responsible for each piece of
+                work? When is each task due?
+              </p>
+            </div>
+          </div>
+
+          <div class="textblock">
+            <div class="textblock-content">
+              <p class="textblock-title -large">
+                5. Keep your workflow simple and make adjustments
+              </p>
+
+              <p class="textblock-body">
+                Avoid creating an overly complicated workflow. To start, keep it
+                simple and check in regularly to make any necessary adjustments.
+              </p>
+
+              <a href="/timeline" class="textblock-link-text -small">
+                Learn more about Timeline
+              </a>
+            </div>
+          </div>
+
+          <div class="textblock">
+            <div class="textblock-content">
+              <p class="textblock-title -large">
+                6. Include a step for goal-setting in your team&rsquo;s workflow
+              </p>
+
+              <p class="textblock-body">
+                Goal-setting helps team members understand how their work
+                supports company objectives.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-small-6 col-small-offset-3">
+            <a href="/"
+              ><button class="textblocks-cta-button -large">
+                Read More
+              </button></a
             >
-              <defs>
-                <filter
-                  id="shadow"
-                  height="145.7%"
-                  width="131.5%"
-                  x="-15.7%"
-                  y="-22.9%"
-                >
-                  <feOffset
-                    dx="0"
-                    dy="3"
-                    in="SourceAlpha"
-                    result="shadowOffsetOuter1"
-                  />
-                  <feGaussianBlur
-                    in="shadowOffsetOuter1"
-                    result="shadowBlurOuter1"
-                    stdDeviation="2.5"
-                  />
-                  <feColorMatrix
-                    in="shadowBlurOuter1"
-                    result="shadowMatrixOuter1"
-                    type="matrix"
-                    values="0 0 0 0 0.141176471   0 0 0 0 0.196078431   0 0 0 0 0.258823529  0 0 0 0.2 0"
-                  />
-                  <feMerge>
-                    <feMergeNode in="shadowMatrixOuter1" />
-                    <feMergeNode in="SourceGraphic" />
-                  </feMerge>
-                </filter>
-                <radialGradient
-                  cx="50%"
-                  cy="50%"
-                  fx="50%"
-                  fy="50%"
-                  r="50%"
-                  gradientTransform="translate(0.500000,0.500000),rotate(90.000000),scale(1.000000,0.994633),translate(-0.500000,-0.500000)"
-                  id="radialGradient-2"
-                >
-                  <stop
-                    stop-color="#FFFFFF"
-                    stop-opacity="0.118526005"
-                    offset="0%"
-                  ></stop>
-                  <stop
-                    stop-color="#FFFFFF"
-                    stop-opacity="0.155375874"
-                    offset="100%"
-                  ></stop>
-                </radialGradient>
-              </defs>
-              <g
-                id="default-cursor"
-                filter="url(#shadow)"
-                fill="none"
-                fill-rule="evenodd"
-                stroke="#FFFFFF"
-              >
-                <circle
-                  class="circle-outer"
-                  fill="url(#radialGradient-2)"
-                  stroke-width="1px"
-                  vector-effect="non-scaling-stroke"
-                  cx="54"
-                  cy="35"
-                  r="34.5"
-                ></circle>
-                <circle
-                  class="circle-inner"
-                  fill="url(#radialGradient-2)"
-                  cx="54"
-                  cy="35"
-                  r="14.5"
-                ></circle>
-                <g class="arrows">
-                  <polyline
-                    class="arrow-right"
-                    points="101 29 107.5 35.5 101 42"
-                  ></polyline>
-                  <polyline
-                    class="arrow-left"
-                    points="7 29 0 35.5 7 42"
-                  ></polyline>
-                </g>
-              </g>
-            </svg>
           </div>
         </div>
       </div>
     </section>
-    <section class="sectionBuilder -bg-gray portfolios-sectionBuilder -first">
+
+    <section class="genericCTA -bg-gray hidden-logged-in">
       <div class="container">
-        <div class="row -align-items-center">
-          <div
-            class="-no-gutters col-xsmall-10 col-xsmall-offset-1 col-large-6 col-large-offset-1 portfolios-animation"
-          >
-            <video
-              class="videoAnimation"
-              src="../assets/images/goals/banner-video.mp4"
-              muted=""
-              playsinline=""
-              autoplay=""
-              loop=""
-            ></video>
-          </div>
-          <div
-            class="-no-gutters col-xsmall-10 col-xsmall-offset-1 col-large-3 col-large-offset-1"
-          >
-            <div class="textStack">
-              <h4 class="heading portfolios-header">
-                Set your team’s priorities
-              </h4>
+        <div class="genericCTA-text -narrow">
+          <h3 class="genericCTA-title">
+            Set up your team&rsquo;s workflows in Instavideo today
+          </h3>
 
-              <p class="subheading portfolios-text">
-                Organize and track all of your team&#8217;s multiple projects in
-                a single view.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="sectionBuilder -bg-gray portfolios-sectionBuilder">
-      <div class="container">
-        <div class="row -align-items-center">
-          <div
-            class="-no-gutters col-xsmall-10 col-xsmall-offset-1 col-large-6 col-large-offset-1 -large-last portfolios-animation -shadow"
-          >
-            <video
-              class="videoAnimation"
-              src="../assets/images/goals/banner-video.mp4"
-              muted=""
-              playsinline=""
-              autoplay=""
-              loop=""
-            ></video>
-          </div>
-          <div
-            class="-no-gutters col-xsmall-10 col-xsmall-offset-1 col-large-3 col-large-offset-1"
-          >
-            <div class="textStack">
-              <h4 class="heading portfolios-header">
-                Monitor progress in real time
-              </h4>
+          <p class="genericCTA-subtitle -large">
+            And deliver better work faster.
+          </p>
 
-              <p class="subheading portfolios-text">
-                Get a high-level overview of how all your projects are
-                progressing, then drill in for more details to address risks.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="sectionBuilder -bg-gray portfolios-sectionBuilder -last">
-      <div class="container">
-        <div class="row -align-items-center">
-          <div
-            class="-no-gutters col-xsmall-10 col-xsmall-offset-1 col-large-6 col-large-offset-1 portfolios-animation"
-          >
-            <video
-              class="videoAnimation"
-              src="../assets/images/goals/banner-video.mp4"
-              muted=""
-              playsinline=""
-              autoplay=""
-              loop=""
-            ></video>
-          </div>
-          <div
-            class="-no-gutters col-xsmall-10 col-xsmall-offset-1 col-large-3 col-large-offset-1"
-          >
-            <div class="textStack">
-              <h4 class="heading portfolios-header">Keep your team updated</h4>
+          <aside class="genericCTA-cta">
+            <a
+              href="/"
+              title="Try for free"
+              class="js-cta-create-account button -large invisible-logged-in gtm--trial_button hidden-device-mobile cta-create-account-desktop"
+            >
+              Try for free
+            </a>
 
-              <p class="subheading portfolios-text">
-                Share your portfolios with stakeholders so everyone can see the
-                progress and status of your important initiatives.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="sectionBuilder -pt-0 -pb-0">
-      <div class="container rotatingGallery-parentContainer">
-        <div class="row">
-          <div class="col-xsmall-12 -no-gutters">
-            <section class="rotatingGallery-container -bg-gray">
-              <div class="rotatingGallery">
-                <div class="rotatingGallery-slides">
-                  <div class="rotatingGallery-slide" data-index="1">
-                    <img
-                      class="rotatingGallery-image"
-                      alt="Track company goals and milestones"
-                      src="assets/images/carousel/image1.png"
-                      title="Track company goals and milestones"
-                      data-index="1"
-                    />
+            <a
+              href="/"
+              title="Try for free"
+              class="js-cta-create-account button -large invisible-logged-in visible-device-mobile -mobile-full gtm--trial_button"
+            >
+              Try for free
+            </a>
 
-                    <div class="rotatingGallery-slide-content">
-                      <p class="rotatingGallery-text -label">Use Cases</p>
-                      <h4 class="rotatingGallery-text rotatingGallery-headline">
-                        Product Launches
-                      </h4>
-                      <p
-                        class="rotatingGallery-text rotatingGallery-description"
-                      >
-                        Track company goals and milestones so everyone
-                        understands how their work fits into the big picture.
-                      </p>
-
-                      <div class="rotatingGallery-text -smaller">
-                        <a href="#" title="Learn more" id="">Learn more</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="rotatingGallery-slide" data-index="2">
-                    <img
-                      class="rotatingGallery-image"
-                      src="assets/images/carousel/image2.png"
-                      title="Launch new products"
-                      data-index="2"
-                    />
-
-                    <div class="rotatingGallery-slide-content">
-                      <p class="rotatingGallery-text -label">Use Cases</p>
-                      <h4 class="rotatingGallery-text rotatingGallery-headline">
-                        Product Launches
-                      </h4>
-                      <p
-                        class="rotatingGallery-text rotatingGallery-description"
-                      >
-                        Launch new products with ease by keeping each team on
-                        the same page about who’s doing what, by when.
-                      </p>
-
-                      <div class="rotatingGallery-text -smaller">
-                        <a href="#" title="Learn more" id="">Learn more</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="rotatingGallery-slide" data-index="3">
-                    <img
-                      class="rotatingGallery-image"
-                      alt="Manage your marketing campaign"
-                      src="assets/images/carousel/image3.png"
-                      title="Manage your marketing campaign"
-                      data-index="3"
-                    />
-
-                    <div class="rotatingGallery-slide-content">
-                      <p class="rotatingGallery-text -label">Use Cases</p>
-                      <h4 class="rotatingGallery-text rotatingGallery-headline">
-                        Product Launches
-                      </h4>
-                      <p
-                        class="rotatingGallery-text rotatingGallery-description"
-                      >
-                        Manage all the moving pieces of your marketing campaign
-                        in one place so you can hit your deadlines.
-                      </p>
-
-                      <div class="rotatingGallery-text -smaller">
-                        <a href="#" title="Learn more" id="">Learn more</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="rotatingGallery-slide" data-index="4">
-                    <img
-                      class="rotatingGallery-image"
-                      src="assets/images/carousel/image1.png"
-                      alt="Standardize your IT requests"
-                      title="Standardize your IT requests"
-                      data-index="4"
-                    />
-
-                    <div class="rotatingGallery-slide-content">
-                      <p class="-label -white">Use Cases</p>
-                      <h4 class="rotatingGallery-text rotatingGallery-headline">
-                        Product Launches
-                      </h4>
-                      <p
-                        class="rotatingGallery-text rotatingGallery-description"
-                      >
-                        Standardize your IT request process so requests get
-                        taken care of quickly and easily.
-                      </p>
-
-                      <div class="rotatingGallery-text -smaller">
-                        <a href="#" title="Learn more" id="">Learn more</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="sectionBuilder portfolios-cta">
-      <div class="container -full">
-        <div class="row -spacing-1">
-          <div
-            class="-no-gutters col-xsmall-10 col-xsmall-offset-1 col-small-8 col-small-offset-2 col-xlarge-6 col-xlarge-offset-3 xxl-4 xxl-off-4"
-          >
-            <div class="textStack">
-              <h4 class="heading -white portfolios-cta-headline">
-                Portfolios is available with Instavideo Business
-              </h4>
-
-              <p class="subheading -large portfolios-cta-subhead">
-                Instavideo Business helps you plan, manage, and monitor work
-                happening across multiple projects, teams, and your company.
-              </p>
-              <a
-                href="#"
-                title="Try Business"
-                class="portfolios-button button -large -light hidden-device-mobile hidden-logged-in"
-                id=""
-                >Try Business</a
-              >
-              <a
-                href="#"
-                title="Try Business"
-                class="portfolios-button button -large -light visible-device-mobile"
-                id=""
-                >Try Business</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="-ta-center col-xsmall">
-            <div class="textStack">
-              <p class="subheading">
-                or <a href="#" class="-white">learn more</a>
-              </p>
-            </div>
-          </div>
+            <a
+              class="js-cta-create-account button -large invisible-logged-out -mobile-full"
+              title="Try for free"
+            >
+              Try for free
+            </a>
+          </aside>
         </div>
       </div>
     </section>
