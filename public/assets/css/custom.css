@@ -23337,10 +23337,10 @@ html[lang="de"] #signup .modal-container.premium-reminder-modal-transition {
   transition-delay: 200ms;
 }
 .siteHeader .navigation__dropdown__section:hover {
-  opacity: 0.6;
+  /* opacity: 0.6; */
 }
 .siteHeader .navigation__dropdown__section:hover {
-  opacity: 1;
+  /* opacity: 1; */
 }
 .siteHeader
   .navigation__dropdown__section.-hovered:hover

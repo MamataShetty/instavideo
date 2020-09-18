@@ -9,14 +9,15 @@ $(document).ready(function () {
     }
   });
 
-  $(".navigation__link-toggle").click(function (event) {
+  $(document).click(".navigation__link-toggle", function (event) {
     $(".siteHeader").addClass("-dropdown-active");
     updateMenu(event);
     event.stopPropagation();
   });
 
   function updateMenu(e) {
-    $(e.target).addClass("-active").removeClass("-active");
+    // $(e.target).addClass("-active").removeClass("-active");
+
     const dropdownnmenu = $(e.target).parent().find(".navigation__dropdown");
     $(e.target)
       .parent()
@@ -64,10 +65,20 @@ $(document).ready(function () {
       $("html").addClass("-no-scroll");
     }
   });
-  $(document).click(function () {
-    $(".horizontalNavigation ").removeClass("-active");
-    $(".navigation__dropdown").removeClass("-active");
-    $(".siteHeader").removeClass("-dropdown-active");
-    $("html").removeClass("-no-scroll");
+
+  $(document).on("click", function (event) {
+    debugger;
+    if (!$(event.target).closest(".siteHeader").length) {
+      $(event.target).closest(".horizontalNavigation ").removeClass("-active");
+      $(event.target)
+        .parent()
+        .find(".navigation__dropdown__section")
+        .removeClass("-active");
+      $(event.target)
+        .parent()
+        .find(".navigation__dropdown")
+        .removeClass("-active");
+      $(".siteHeader").removeClass("-dropdown-active");
+    }
   });
 });
