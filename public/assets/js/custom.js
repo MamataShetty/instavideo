@@ -67,7 +67,6 @@ $(document).ready(function () {
   });
 
   $(document).on("click", function (event) {
-    debugger;
     if (!$(event.target).closest(".siteHeader").length) {
       $(event.target).closest(".horizontalNavigation ").removeClass("-active");
       $(event.target)
